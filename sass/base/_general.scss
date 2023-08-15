@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+body{
+    // using functions here instead of var
+    font-size: fs(400);
+    font-weight: $fw-400;
+    font-family: $ff-sans;
+    color: clr(neutral,900);
+    background: clr(neutral,100);
+}
+
+/* set up body */
+body {
+    min-height: 100vh;
+    display: grid; /*helps everything stretch out*/
+    grid-template-rows: min-content 1fr; /*fixes heigth problem*/
+  }
+  
+  /* images */
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* forms */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
