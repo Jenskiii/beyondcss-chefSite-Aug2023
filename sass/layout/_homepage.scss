@@ -1,3 +1,6 @@
-body{
-    background-color: darkgray;
+@use "../abstracts/" as *;
+.testimonials{
+    h2{
+        margin-bottom: 5rem;
+    }
 }

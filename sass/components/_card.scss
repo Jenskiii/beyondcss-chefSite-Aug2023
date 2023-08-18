@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+.card{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    &__body{
+        display: flex;
+        align-items: center;
+        padding: $card-body-padding;
+    }
+
+    &[data-type="testimonial"] &__body{
+        position: relative;
+        isolation: isolate;
+
+        &:after{
+            position: absolute;
+            z-index: -1;
+            left: 1rem;
+            top: -7rem;
+            // make qoutation mark
+            content: "\201C";
+            font-size: 25rem;
+            font-family: $ff-accent;
+            opacity: .1;
+        }
+    }
+}
+

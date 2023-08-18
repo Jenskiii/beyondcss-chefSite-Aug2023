@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.primary-header{
+    position: absolute;
+    
+    // inset center the header , works like margin auto
+    inset: 0 0 auto;
+}
